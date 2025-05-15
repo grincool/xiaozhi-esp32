@@ -112,8 +112,7 @@ std::string Ml307Board::GetBoardJson() {
     board_json += "\"carrier\":\"" + modem_.GetCarrierName() + "\",";
     board_json += "\"csq\":\"" + std::to_string(modem_.GetCsq()) + "\",";
     board_json += "\"imei\":\"" + modem_.GetImei() + "\",";
-    board_json += "\"iccid\":\"" + modem_.GetIccid() + "\",";
-    board_json += "\"cereg\":" + modem_.GetRegistrationState().ToString() + "}";
+    board_json += "\"iccid\":\"" + modem_.GetIccid() + "\"}";
     return board_json;
 }
 
